@@ -1,0 +1,6 @@
+@import "../../variables.scss";
+
+.home-container {
+  background-color: $veryLightGray;
+  min-height: calc(100vh - 59px);
+}
