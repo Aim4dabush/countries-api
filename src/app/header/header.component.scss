@@ -1,0 +1,15 @@
+.header-container {
+  display: flex;
+  padding: 0 3rem;
+
+  .btn {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    padding: 0.25rem 0.5rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
