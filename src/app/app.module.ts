@@ -13,7 +13,14 @@ import { RegionComponent } from './home/region/region.component';
 import { CountryDetailsComponent } from './country-details/country-details.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, SearchComponent, RegionComponent, CountryDetailsComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    SearchComponent,
+    RegionComponent,
+    CountryDetailsComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
