@@ -1,11 +1,10 @@
 @import "../../variables.scss";
 
 .home-container {
-  background-color: $veryLightGray;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-evenly;
-  min-height: calc(100vh - 59px);
+  min-height: 100vh;
   max-width: 1440px;
 }

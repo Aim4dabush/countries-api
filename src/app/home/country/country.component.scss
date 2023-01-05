@@ -1,6 +1,8 @@
+@import "../../../variables.scss";
+
 .card {
   border-radius: 8px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 8px $shadow;
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -19,9 +21,7 @@
   }
 
   .img-container {
-    align-self: flex-start;
     height: 150px;
-    width: 100%;
 
     .card-img {
       border-top-left-radius: 8px;
