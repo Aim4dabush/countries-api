@@ -1,0 +1,34 @@
+.card {
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 275px;
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 1rem;
+
+    .card-title {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .img-container {
+    align-self: flex-start;
+    height: 150px;
+    width: 100%;
+
+    .card-img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}

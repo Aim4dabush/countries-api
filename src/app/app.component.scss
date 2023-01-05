@@ -1,1 +1,7 @@
+@import "../variables.scss";
 
+main {
+  background-color: $veryLightGray;
+  display: flex;
+  justify-content: center;
+}

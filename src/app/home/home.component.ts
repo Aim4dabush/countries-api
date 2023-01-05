@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Country } from '../country.module';
 import { HomeService } from './home.service';
 
 @Component({
@@ -7,7 +8,15 @@ import { HomeService } from './home.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  countries: Country[] = [];
+
   constructor(private homeService: HomeService) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.homeService.getCountries();
+    this.homeService.countryChanges.subscribe((data: Country[]) => {
+      this.countries = data;
+      console.log(this.countries);
+    });
+  }
 }
